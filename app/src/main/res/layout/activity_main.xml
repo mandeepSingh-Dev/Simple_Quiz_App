@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+  <androidx.cardview.widget.CardView
+    android:id="@+id/cardVieeeww"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_constraintTop_toTopOf="parent"
+      app:cardElevation="2dp"
+      app:layout_constraintBottom_toTopOf="@id/seekBar"
+      app:layout_constraintLeft_toLeftOf="parent">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbarr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:title="Quiz"
+        app:titleCentered="true"
+        android:textAlignment="center"
+        app:titleTextAppearance="@style/titleappearnce"
+        app:titleTextColor="@color/black"
+        >
+    </com.google.android.material.appbar.MaterialToolbar>
+  </androidx.cardview.widget.CardView>
+
+  <SeekBar
+      android:id="@+id/seekBar"
+      style="@style/Widget.AppCompat.SeekBar.Discrete"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:max="5"
+      android:progress="0"
+      android:layout_marginLeft="15dp"
+      android:layout_marginRight="15dp"
+      android:layout_marginTop="10dp"
+      android:scrollbarFadeDuration="1000"
+      android:elevation="20dp"
+      android:thumbTint="#C62828"
+      android:thumb="@drawable/ic_baseline_lightbulb_24"
+      android:tickMark="@android:color/transparent"
+      android:tickMarkTint="@android:color/transparent"
+      android:progressTint="#C62828"
+      app:layout_constraintLeft_toLeftOf="@id/recyclerVIew"
+      app:layout_constraintRight_toRightOf="@id/recyclerVIew"
+      app:layout_constraintTop_toBottomOf="@id/cardVieeeww"
+      />
+
+ <!-- <ProgressBar
+      android:id="@+id/progressBar"
+      style="?android:attr/progressBarStyleHorizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/seekBar" />-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerVIew"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:clipChildren="true"
+
+        app:layout_constraintTop_toBottomOf="@id/seekBar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

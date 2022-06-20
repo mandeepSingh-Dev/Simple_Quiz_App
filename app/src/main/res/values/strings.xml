@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+
+    <string name="question1">1.Number of primitive data types in Java are?</string>
+    <string name="question2">2. How many states are there in India?</string>
+    <string name="question3">3. All layout classes are the subclasses of</string>
+    <string name="question4">4. What are the basic data types in Kotlin?</string>
+    <string name="question5">5. Which city is the centre of India?</string>
+
+    <string name="submit">submit</string>
+    <string name="next">Next</string>
+    <string name="question">Question</string>
+
+    <string-array name="question1_Options">
+        <item >a. 6</item>
+        <item >b. 8</item>
+        <item >c. 7</item>
+        <item >d. 9</item>
+    </string-array>
+    <string-array name="question2_Options">
+        <item >a. 28</item>
+        <item >b. 26</item>
+        <item >c. 29</item>
+        <item >d. 27</item>
+    </string-array>
+    <string-array name="question3_Options">
+    <item >a. android.widget</item>
+    <item >b. android.view.View</item>
+    <item >c. android.view.ViewGroup</item>
+    <item >d. None of the above
+</item>
+</string-array>
+    <string-array name="question4_Options">
+    <item >a. Characters</item>
+    <item >b. Numbers &amp; Strings</item>
+    <item >c. Booleans &amp; Arrays</item>
+    <item >d. All are Correct</item>
+</string-array>
+    <string-array name="question5_Options">
+        <item >a. Nagpur</item>
+        <item >b. Bhopal</item>
+        <item >c. Raipur</item>
+        <item >d. Mumbai</item>
+    </string-array>
+
+</resources>
